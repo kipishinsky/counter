@@ -1,0 +1,13 @@
+.App {
+  background-image: url("https://miro.medium.com/max/3840/1*5KV3Z7P6b8K8YXs6_DgaSQ.jpeg");
+  background-size: cover;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+
+.value {
+  color: red;
+}
