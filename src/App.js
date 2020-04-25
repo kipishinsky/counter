@@ -25,17 +25,21 @@ class App extends React.Component {
 
 
     render = () => {
-        // css style
-        let value = (this.state.number === 5) ? "value" : "";
-        let add = (this.state.number === 5) ? "add" : "";
+
+        let Five = (this.state.number === 5) ? "Five" : "";
+        let Inc = (this.state.number === 5) ? "Inc" : "";
         let res = (this.state.number === 0) ? "res" : "";
 
         return (
             <div className="App">
                 <div className='container'>
-                    <span className={value}>{this.state.number}</span>
-                    <button disabled={add} onClick={this.AddClick}>Inc</button>
-                    <button disabled={res} onClick={this.resetClick}>Reset</button>
+                    <div className={`number ${Five}`}>
+                        <span>{this.state.number}</span>
+                    </div>
+                    <div className='buttons'>
+                        <button className={`incButton ${Inc}`} disabled={Inc} onClick={this.AddClick}>INC</button>
+                        <button className={`resetButton ${res}`} disabled={res} onClick={this.resetClick}>RESET</button>
+                    </div>
                 </div>
             </div>
         );
