@@ -4,7 +4,7 @@ import './App.css';
 class App extends React.Component {
 //стейт
 //стейт
-//стейт 
+//стейт
 //стейт
 //стейт
    state = {
